@@ -34,7 +34,7 @@ npm run dev
 
 To start:
 ```bash
-php artisan serve
+composer run dev 
 ```
 
 To generate QR: ensure queue is running:
