@@ -1,9 +1,7 @@
-// Directory: resources/js/components/Leaderboard.vue
 <template>
     <div class="max-w-xl mx-auto p-4 border rounded">
         <div v-if="errorMessage" class="text-red-500 mb-4">{{ errorMessage }}</div>
 
-        <!-- Search Bar -->
         <div class="mb-4">
             <input
                 v-model="search"
@@ -13,10 +11,9 @@
             />
         </div>
 
-        <!-- Sort Controls -->
         <div class="flex justify-between mb-2 font-bold">
-            <div @click="sortBy('name')" class="cursor-pointer">Name</div>
-            <div @click="sortBy('points')" class="cursor-pointer">Points</div>
+            <div @click="sortBy('name')" class="cursor-pointer">Name (Please click)</div>
+            <div @click="sortBy('points')" class="cursor-pointer">Points (Please click)</div>
         </div>
 
         <div v-for="user in filteredAndSortedUsers" :key="user.id" class="flex items-center justify-between mb-2">
