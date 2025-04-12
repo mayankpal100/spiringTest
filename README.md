@@ -58,6 +58,11 @@ Declare Winner command:
 php artisan declare:winner
 ```
 
+Api Testing  run :
+```bash
+php artisan test
+```
+
 
 ### API Endpoints
 
